@@ -1,0 +1,35 @@
+# Core framework
+fastapi==0.115.2
+uvicorn[standard]==0.31.1
+aiofiles==23.2.1  # utile pour servir des fichiers statiques (optionnel mais sûr)
+
+# Frontend / UI
+streamlit==1.39.0
+pyvis==0.3.2  # pour graphe interactif
+pydantic==2.9.2
+pydantic-settings==2.5.2  # requis pour utils/config.py
+
+# Data & search
+elasticsearch==8.15.1
+numpy==1.26.4
+scikit-learn==1.5.2
+
+# Utils & instrumentation
+python-dotenv==1.0.1
+tqdm==4.66.5
+requests==2.32.3
+tenacity==8.5.0
+rich==13.9.1  # logs colorés
+loguru==0.7.2
+
+# Testing
+pytest==8.3.3
+httpx==0.27.2  # pour tests FastAPI async
+
+# Gemini
+google-generativeai==0.7.2
+
+# Optionnel : Google Vertex AI / Cloud client libs (pour intégration future)
+google-cloud-aiplatform==1.65.0
+google-auth==2.35.0
+sentence-transformers
